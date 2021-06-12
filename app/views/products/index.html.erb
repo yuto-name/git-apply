@@ -1,0 +1,50 @@
+<div class = "product-index">
+    ここではサイト上に存在する全ての商品が出そろっています(作成順)</br>
+    ＊画像をクリックすると画像の商品のレビューページに飛びます
+    <div class = "product-contents">
+    <div class = "pictures">
+        <% @products.each do |product| %>
+        <div class = "picutre-display">
+             <%= link_to new_product_tweet_path(product.id), method: :get do %> 
+             <%= image_tag product.image_url,width: '270px', height: '180px' %>
+             <% end %>
+        <div class= "picture-ditails">
+            <div class= "ditails-category">
+                商品使用場所：<%= product.category %>
+            </div>
+            <div>
+                <%= product.name %>
+                <%= product.store %>
+            </div>
+            <div class = "ditails" style="font-size: 10px;">
+                詳細（表示される文字数は250文字までです）  
+                <div class = "comment">
+                <%= truncate(product.details, length: 250) %>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+        <% end %>
+        <%= paginate(@products) %>
+    </div>
+    <div class = "tweet-contents">
+        <div class = "tweet-member">
+            
+                
+                <div class = "user-count">
+                    ユーザー名</br>投稿数(ランキング)
+                <% @user.each.with_index(1) do |product, i| %>
+                <ul style= "list-style: none;">
+                <li><%= i %>:<%= product.user.nickname %></li>
+                </div>
+                
+                <div class = "tweet-count">
+                    商品カテゴリー</br>（カテゴリー別ランキング）
+                </div>
+                <% end %>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>

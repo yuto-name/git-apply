@@ -1,0 +1,30 @@
+<div class = "edit-form">
+    編集はこちらへ
+    <%= form_tag("/reviews/#{@review.id}", method: :patch) do %>
+    <div class = e-form>
+        <label>エリアの変更はこちらへ</label>
+        <input type="text" name = "place" placeholder = "（例）キッチン→ベランダ" value = "<%= @review.place %>">
+    </div>
+    
+    <div class = e-form>
+        <label>製品の変更はこちらへ</label>
+        <input type="text" name = "product" placeholder = "（例）まな板→ベランダ菜園" value = "<%= @review.product %>">
+    </div>
+    
+    <div class = e-form>
+        <label style= "color: #876; margin-right: 360px;">詳細な情報</label>
+        <div><textarea name = "details" placeholder = "選択が干せれるレベルのベランダ菜園をやりたい"><%= @review.details %></textarea></div>
+    </div>
+    
+    <div class = e-form>
+        <label>エリアの変更はこちらへ</label>
+        <input type="file" name = "image" placeholder = "画像を別のものと取り換える（URL）">
+    </div>
+    
+    <div class = e-form>
+        <label>入力内容に間違えがないか確かめて</label>
+        <input type="submit" value = "編集完了" >
+    </div>
+    
+    <% end %>
+</div>

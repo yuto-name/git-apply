@@ -1,0 +1,62 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.use{
+    background-image: url('corona-5124524_640.jpg');
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
+    
+    
+    .user-contents{
+        background: rgba(150, 90, 80, 0.1);
+        width: 79%;
+        margin: 60px auto;
+        
+    div{
+        border: double 4px #346;
+        display: inline-block;
+    }
+    
+        
+    }
+    .user-show{
+        display: flex;
+        justify-content: space-between;
+        
+        .category{
+            border: double 5px #467;
+            border-radius: 30px;
+            
+            li{
+                margin-right: 5px;
+            }
+        }
+    }
+    .details{
+      display:flex;
+      justify-content: space-between;    
+        
+.user-details{
+        height: 200px;
+        width: 400px;
+        background: rgba(250, 30, 40, 0.4);
+        border: inset 6px green;
+        border-radius: 9px;
+    }
+.user-image{
+        height: 200px;
+        width: 400px;
+        border: inset 6px green;
+        border-radius: 9px;
+        
+        img{
+            width: 400px;
+            height: 200px;
+        }
+    }
+    }
+   
+}

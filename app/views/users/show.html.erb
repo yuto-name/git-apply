@@ -1,0 +1,29 @@
+<div class = "use">
+    <div class ="user-contents">
+        <div><%= current_user.nickname %>さんの投稿</div>
+        <% current_user.reviews.each do |user|  %>
+        <div class = "user-show">
+            <div class = "category">
+                <ul style ="list-style: none; color: white;"> 
+                    <li>エリア：<%= user.place %>について</li>
+                    <li>製品：<%= user.product %>について</li>
+                </ul>
+            </div>
+            <div class ="botton">
+            <ul style ="list-style: none;">
+                <li><%= link_to '編集する', "/reviews/#{current_user.id}/edit", class: 'botton-name' %></li>
+                <li><%= link_to '削除', " /reviews/#{current_user.id}",method: :delete, class: 'botton-name' %></li>
+            </ul>
+            </div>
+        </div>
+    <div class = "details">
+        <div class = "user-details">
+            詳細:<%= user.details %>
+        </div>
+         <div class = "user-image">
+             <%= image_tag user.image %>
+         </div>
+    </div>
+        <% end %>
+    </div>
+</div>

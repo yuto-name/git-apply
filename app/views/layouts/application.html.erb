@@ -1,0 +1,66 @@
+<!DOCTYPE HTML5>
+ <html>
+<head lang = "ja">
+    <title>Apply</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src = "javascript/products.js"></script>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+            $('.slide-contents').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
+</head>
+    </html>
+    <body>
+    <header>
+        <div class = "headers">
+            <div class = "header-name">
+                <a href = "/" class = "header-button" ><span style = "font-weight: bold; color: red">場所タグ～一人暮らしから衣替え迄すべて解決
+                </span></a>
+            </div>
+            
+            <%= form_with(url: search_products_path, local: true, method: :get, class: "search-form") do |f| %>
+            <%= f.label :商品の検索はこちら！ %>
+            <%= f.text_field :keyword, placeholder: "キーワードはこちらへ", class: "search-input" %>
+            <%= f.submit "検索", class: "search-btn" %>
+            <% end %>
+            
+            <div class = "header-contents">
+               <%= link_to '製品紹介', '/products',  class: "content" %>
+               <%= link_to 'メニュー', '/reviews/new', class: "content" %>
+                 <% if user_signed_in? %>
+                <%= link_to 'サインアウト', destroy_user_session_path, method: :delete,  class: "content" %>
+                <%= link_to '投稿する', '/reviews/new', class: "content" %>
+                <%= link_to  "#{current_user.nickname}", " /users/#{current_user.id}", class: "content" %>
+                <% else %>
+                <%= link_to 'サインアップ', new_user_registration_path, class: "content" %>
+                <%= link_to 'ログイン', new_user_session_path, class: "content" %>
+                <% end %>
+            </div>
+        </div>
+    </header>    
+    <%= yield %>
+     <footer>
+       <div class ="footer-contents-top">
+             <a href = "/comments/new" class = "header-button-footer" >サイトについての質問はこちら</a>
+             <a href = "/comments/new" class = "header-button-footer" >サイト紹介</a>
+             <a href = "/comments/new" class = "header-button-footer" >物件情報【最新のおすすめ物件はこちら】</a>
+             <a href = "/comments" class = "header-button-footer" >Q&A</a>
+    </div>
+     <div class = "copyright">
+        <h3>Copyright(c)IETAKU SITE All Rights Reserved.</h3>
+    </div>
+    </footer>
+    </body>

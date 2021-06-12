@@ -1,0 +1,108 @@
+/*index.html.erb*/
+
+.contents{
+    border:inset 7px #779;
+    display: flex;
+.contents-name{
+
+ul{
+    display: inline-block;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    li{
+        padding: 20px;
+        border: inset  6px #580;
+        border-radius: 3px;
+        background-color: #AEDC;
+        text-decoration: none;
+        margin-right: 16px;
+        cursor: pointer;
+        
+    &.selected {
+         background-color: white;
+         color: green;
+         }
+}
+    }
+    
+
+
+.contents-menu{
+    display: inline-block;
+    width: 100%;
+    
+    .left{
+        margin: 5px;
+        border:double 3px blue;
+        display: inline-block;
+        padding: 4px;
+    }
+    
+    .right{
+        display:none;
+        margin: 5px;
+        border:double 3px blue;
+        display: inline-block;
+        padding: 4px;
+    }
+}
+}
+
+
+.reviews-form{
+    height: 900px;
+    width: 1080px;
+    margin: 80px auto;
+    background-image: url("apartment-5974511_640.jpg");
+    background-size: cover;
+    text-align:center;
+    letter-spacing: 10px;
+    border-radius: 20px;
+    
+    input[type= text]{
+        width: 63%;
+        margin: 30px;
+    }
+    
+    textarea{
+        width: 65%;
+        height: 190px;
+        margin: 25px;
+    }
+    
+    .form-fileds{
+        color: white;
+        margin: 40px;
+    }
+ 
+}
+
+/*edit.html.erb*/
+.edit-form{
+    background-image:url('but0019-013.jpg');
+    background-size: cover;
+    overflow:hidden;
+    
+    form{
+        margin: 90px auto;
+        text-align: center;
+        
+        label{
+            line-height: 100%;
+        }
+        
+        .e-form{
+            margin: 30px;
+            background: rgba(80 ,90, 100, 0.1);
+            
+            textarea{
+                height: 191px;
+                width: 448px;
+            }
+        }
+        
+    }
+}

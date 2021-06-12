@@ -1,0 +1,30 @@
+
+<div class = "contents">
+        <div class = "contents-name">
+             <p>コンテンツ一覧｛現在登録者数（後に記入）｝</p>
+            <ul>
+                <li id = "left" class = "selected">登録者様一覧［カテゴリー］</li>
+                <li id = "right">商品一覧［検索済］</li>
+            </ul>
+        </div>
+            <div class = "contents-menu">
+                <% @reviews.each do |review| %>
+                <div class = "left" style="color :blue;">
+                    <%= review.user.nickname %>
+                    </div>
+                
+                <div class= "right"  style="color :blue;">
+                    <%= review.product %>
+                </div>
+                <% end %>
+            </div>
+</div>
+        <div class ="main-contents">
+            <div class = "slide-contents">
+              <%= image_tag "kitchen-728727_640.jpg", alt: '#', id: "assets", class: "#", width: "450px", height: "450px" %>
+              <%= image_tag "living-room-2732939_640.jpg", alt: '#', id: "assets", class: "#", width: "450px", height: "450px" %>
+              <%= image_tag "lily-of-the-valley-4169438_640.jpg", alt: '#', id: "assets", class: "#", width: "450px", height: "450px" %>
+              <%= image_tag "bathroom-2094733_640.jpg", alt: '#', id: "assets", class: "#", width: "450px", height: "450px" %>
+              <%= image_tag "furniture-3051843_640.jpg", alt: '#',id: "assets", class: "#", width: "450px", height: "450px" %>
+            </div>
+    </div>

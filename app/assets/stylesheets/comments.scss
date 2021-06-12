@@ -1,0 +1,48 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.comments-room{
+    background-image: url('lily-of-the-valley-4169438_640');
+    background-size: cover;
+    height: 100%;
+    text-align:center;
+    border-radius: 10px;
+    overflow: hidden;
+    .comments-area{
+        background-color:rgba(50,255,0,0.5);
+        border-radius: 14px;
+        height: 360px;
+        width: 75%;
+        margin: 50px auto;
+        
+        .form-commment{
+            label{
+                letter-spacing: 6px;
+            }
+            textarea{
+                height: 220px;
+                width: 420px;
+                margin: 30px;
+            }
+        }
+    }
+}
+
+/*index.html.erb*/
+
+.question-area{
+    background-image: url('foyer-902404_640.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    top: 0;
+    overflow: hidden;
+    
+    .question-forms{
+        background-color: rgba(0, 0, 60, 0.5);
+        width: 740px;
+        height: 160px;
+        border: double 5px #478;
+        margin: 60px auto;
+    }
+}

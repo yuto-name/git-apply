@@ -1,0 +1,26 @@
+<div class = "tweets-main">
+     <p>あなたが興味を持った商品：<%= @product.name %></p>
+    <div class = "product-tweets">
+        <%= image_tag @product.image_url, height: 450, width: 450 %>
+        <div class = "pt-tweets" style= " background:rgba(80, 80, 0, 0.1);">
+            <%= form_for [@product,@tweet] do |f| %>
+            
+            <div>
+            <div><%= f.label :レビューはこちらへ %></div>
+            <%= f.text_area :comment, placeholder: 'レビューを書こう！' %>
+            </div>
+            
+            <div>
+            <div><%= f.label :採点してね %></div>
+            <%= f.number_field :rate, placeholder: '10段階でつけてね', value: 1, max: 10, min: 1 %>
+            </div>
+            
+            <div style= "color: #578;">
+            <%= f.label :確認したら横のボタンをクリック %>
+            <%= f.submit value: "実行" %>
+            </div>
+            
+            <% end %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+
+/*新規登録ページ*/
+.registration_page{
+    background-color: white;
+    height: 630px;
+    width: 660px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: double;
+    
+    h2{
+        text-align:center;
+    }
+    
+    form{
+        border: groove;
+        border-radius: 10px;
+        height: 380px;
+        margin :0 auto;
+        width: 420px;
+        
+        .field{
+            margin: 45px;
+            text-align:center;
+        }
+         .actions{
+                text-align:center;
+            }
+    }
+    a{
+        margin-left: 30px;
+    }
+}
+
+/*ログインページ*/
+.log_in{
+    background-color: white;
+    height: 560px;
+    width: 620px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: double;
+    
+    h2{
+        text-align:center;
+    }
+    
+    form{
+        border: groove;
+        border-radius: 10px;
+        height: 380px;
+        margin :0 auto;
+        width: 420px;
+        
+        .field{
+            margin: 30px;
+            text-align:center;
+        }
+         .actions{
+                text-align:center;
+            }
+    }
+    a{
+        margin-left: 30px;
+    }
+}

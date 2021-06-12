@@ -1,0 +1,27 @@
+    <div class = "reviews-form">
+        <h2>みんなに聞きたい！</br>（道具と場所どちらかは必須です）</h2>
+         <%= form_for (@review) do |f| %>
+
+        <div class = "form-fileds">
+        <%= f.label :場所をお書きください %>
+        <div><%= f.text_field :place, placeholder: "キッチン　トイレ" %></div>
+        </div>   
+        
+        <div class = "form-fileds">
+        <%= f.label :ジャンルは何ですか？ %>
+        <div><%= f.text_field :product, placeholder: "(例)掃除機, 小物入れ" %></div>
+        </div>
+        
+         <div class = "form-fileds">
+        <%= f.label :詳細を描いてください（必須） %>
+        <%= f.text_area :details, placeholder: "(例)キッチンで使う調理器具をかさばらず一つの場所で保管したい" %>
+        </div>
+     
+         <div class = "form-fileds">
+        <%= f.label :写真を投稿してください（必須） %>
+        <%= f.file_field :image %>
+        </div>
+        
+          <div class = "form-fileds">
+        <%= f.label :記載された内容に間違いがないかご確認ください %>
+ご

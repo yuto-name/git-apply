@@ -1,0 +1,14 @@
+<div class = "question-area">
+    
+    <% @comments.each do |comment| %>
+      <div class = "question-forms"style= "color :white">
+    <%= comment.user.nickname %>さんの質問
+        <div class = "question-form" style= "color :white">
+            <div class = "question">
+                <%= comment.question %>
+            </div>
+        </div>
+    </div>
+    <% end %>
+    
+</div>
