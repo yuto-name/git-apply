@@ -13,7 +13,7 @@
         </div>
         
          <div class = "form-fileds">
-        <%= f.label :詳細を描いてください（必須） %>
+        <div><%= f.label :詳細を描いてください（必須） %></div>
         <%= f.text_area :details, placeholder: "(例)キッチンで使う調理器具をかさばらず一つの場所で保管したい" %>
         </div>
      
@@ -22,6 +22,7 @@
         <%= f.file_field :image %>
         </div>
         
-          <div class = "form-fileds">
-        <%= f.label :記載された内容に間違いがないかご確認ください %>
-ご
+         <div class = "form-fileds">
+             <%= f.submit "送信" %>
+          </div>
+       <% end %>

@@ -43,7 +43,7 @@
                  <% if user_signed_in? %>
                 <%= link_to 'サインアウト', destroy_user_session_path, method: :delete,  class: "content" %>
                 <%= link_to '投稿する', '/reviews/new', class: "content" %>
-                <%= link_to  "#{current_user.nickname}", " /users/#{current_user.id}", class: "content" %>
+                <%= link_to current_user.nickname, " /users/#{current_user.id}",method: :get, class: "content" %>
                 <% else %>
                 <%= link_to 'サインアップ', new_user_registration_path, class: "content" %>
                 <%= link_to 'ログイン', new_user_session_path, class: "content" %>
