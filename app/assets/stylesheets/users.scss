@@ -1,60 +1,59 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 .use{
-    background-image: url('corona-5124524_640.jpg');
+    background-color: #254;
     background-size: cover;
-    overflow: hidden;
-    height: 100%;
     min-height: 100%;
     
     
-    .user-contents{
-        margin: 60px auto;
-        
-    div{
-        border: double 4px #346;
-        display: inline-block;
-    }
     
+    .user{
+       
         
-    }
-    .user-show{
-        display: flex;
-        justify-content: space-between;
+    .tweet-main{
+       width: 530px;
+       margin: 0 auto;
+       background-color: #886;
+       min-height: 40%;
+       border-radius: 3px;
+       opacity: 0.9;
+       font-weight: bold;
+       
         
-        .category{
-            border: double 5px #467;
-            border-radius: 30px;
-            
-            li{
-                margin-right: 5px;
-            }
-        }
+       .tweet-middle{
+           display:flex;
+           justify-content:center;
+           padding: 29px;
+           
+           
+       .tweet-left{
+           
+       .tweet-left-top{
+           display:flex;
+           
+           .tweet-left-i{
+               
+           }
+           .tweet-left-reason{
+               width: 260px;     
+               margin-left: 20px;
+               
+           }
+       }
+       .tweet-left-bottom{
+        border: inset;
+        width: 250px;
+        height: 90px;
+        padding: 9px;
+        word-break:break-all;
     }
-    .details{
-      display:flex;
-      justify-content: space-between;    
-        
-.user-details{
-        height: 200px;
-        width: 400px;
-        background: rgba(250, 30, 40, 0.4);
-        border: inset 6px green;
-        border-radius: 9px;
-    }
-.user-image{
-        height: 200px;
-        width: 400px;
-        border: inset 6px green;
-        border-radius: 9px;
-        
-        img{
-            width: 400px;
-            height: 200px;
-        }
-    }
-    }
-   
+       }
+       .tweet-right{
+           margin-left: 25px;
+       }
+       
+}
+}
+}
 }

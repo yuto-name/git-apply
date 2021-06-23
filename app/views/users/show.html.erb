@@ -1,30 +1,33 @@
 <div class = "use">
-    <div class ="user-contents">
-        <div><%= current_user.nickname %>さんの投稿</div>
-        <% current_user.reviews.each.with_index(1) do |user,i|  %>
-        <div class = "user-show">
-            <div class = "category">
-                <ul style ="list-style: none; color: white;">
-                    <%= i %> 
-                    <li>エリア：<%= user.place %>について</li>
-                    <li>製品：<%= user.product %>について</li>
-                </ul>
+    <div class ="user">
+    <% unless current_user.reviews.present? %>
+       まだ質問はしていません
+      <% else %>
+       今まで投稿した質問はこちら
+        <%= current_user.nickname %>
+     <!--中身のメイン -->
+         <% current_user.reviews.each.with_index(1) do |user,i| %>
+     <div class = "tweet-main">
+         <div class = "tweet-middle">
+             <!--中身の左側のメイン -->
+          <div class = "tweet-left">
+              <!--中身の左側上部のメイン -->
+            <div class = "tweet-left-top">
+              <div class = "tweet-left-i"><%= i %></div>
+              <div class = "tweet-left-reason">
+                  <%= user.place %>の<%= user.product %></br>について</div> 
             </div>
-            <div class ="botton">
-            <ul style ="list-style: none;">
-                <li><%= link_to '編集する', "/reviews/#{current_user.id}/edit", class: 'botton-name' %></li>
-                <li><%= link_to '削除', " /reviews/#{current_user.id}",method: :delete, class: 'botton-name' %></li>
-            </ul>
+            <!--中身の左側下部のメイン -->
+            <div class = "tweet-left-bottom">
+                    詳細：</br><%= user.details .truncate(100, omission: '....') %>
             </div>
-        </div>
-    <div class = "details">
-        <div class = "user-details">
-            詳細:<%= user.details %>
-        </div>
-         <div class = "user-image">
-             <%= image_tag user.image %>
+            </div>
+            <div class = "tweet-right">
+                <%= image_tag user.image, width: '193px', height: '180px' %>
          </div>
-    </div>
-        <% end %>
+     
+            </div>
+          <% end %>
+    <% end %>
     </div>
 </div>
