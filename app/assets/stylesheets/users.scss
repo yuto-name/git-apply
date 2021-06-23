@@ -1,3 +1,59 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.use{
+    background-color: #254;
+    background-size: cover;
+    min-height: 100%;
+    
+    
+    
+    .user{
+       
+        
+    .tweet-main{
+       width: 530px;
+       margin: 0 auto;
+       background-color: #886;
+       min-height: 40%;
+       border-radius: 3px;
+       opacity: 0.9;
+       font-weight: bold;
+       
+        
+       .tweet-middle{
+           display:flex;
+           justify-content:center;
+           padding: 29px;
+           
+           
+       .tweet-left{
+           
+       .tweet-left-top{
+           display:flex;
+           
+           .tweet-left-i{
+               
+           }
+           .tweet-left-reason{
+               width: 260px;     
+               margin-left: 20px;
+               
+           }
+       }
+       .tweet-left-bottom{
+        border: inset;
+        width: 250px;
+        height: 90px;
+        padding: 9px;
+        word-break:break-all;
+    }
+       }
+       .tweet-right{
+           margin-left: 25px;
+       }
+       
+}
+}
+}
+}
