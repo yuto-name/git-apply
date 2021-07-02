@@ -1,9 +1,10 @@
 
 $(window).on("load", function(){
-    $("#menu").on("click", function(){
-        $(".navi").show();
-    $("#closed").on("click", function(){
-        $(".navi").hide();
-    });
+    $("#nav").on("click", function(){
+      $(".nav").removeClass("nav");
+      $("#nav div").addClass("nav");
+      $(this).show();
+      $(".header-contents").hide();
+      $(".header-contents").show();
     });
 });

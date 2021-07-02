@@ -36,20 +36,31 @@
             <%= f.text_field :keyword, placeholder: "キーワードはこちらへ", class: "search-input" %>
             <%= f.submit "検索", class: "search-btn" %>
             <% end %>
-            
-            <div class = "header-contents">
-               <%= link_to '製品紹介', '/products',  class: "content" %>
-               <%= link_to 'メニュー', '/reviews/new', class: "content" %>
-                 <% if user_signed_in? %>
-                <%= link_to 'サインアウト', destroy_user_session_path, method: :delete,  class: "content" %>
-                <%= link_to '質問はこちらから', '/reviews/new', class: "content" %>
-                <%= link_to '投稿履歴', " /users/#{current_user.id}",method: :get, class: "content" %>
-                <% else %>
-                <%= link_to 'サインアップ', new_user_registration_path, class: "content" %>
-                <%= link_to 'ログイン', new_user_session_path, class: "content" %>
-                <% end %>
-            </div>
+<!---ここから下はナビゲーション --->
+
+<button id = "nav">
+    <div>閉じる</div>
+    <p class = "nav">メニュー一覧</p>
+<div class = "header-contents">
+    <ul>
+      <li><%= link_to '製品紹介', '/products',  class: "content" %></li>
+      <li><%= link_to 'メニュー', '/reviews/new', class: "content" %></li>
+             <% if user_signed_in? %>
+      <li><%= link_to 'サインアウト', destroy_user_session_path, method: :delete,  class: "content" %></li>
+      <li><%= link_to '質問はこちらから', '/reviews/new', class: "content" %></li>
+      <li><%= link_to '投稿履歴', " /users/#{current_user.id}",method: :get, class: "content" %></li>
+            <% else %>
+      <li><%= link_to 'サインアップ', new_user_registration_path, class: "content" %></li>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "content" %></li>               
+            <% end %>
+    </ul>
+</div>
+</button>
+<!---ここまでがナビゲーション --->
+
+</div>
         </div>
+       
     </header>    
     <%= yield %>
      <footer>

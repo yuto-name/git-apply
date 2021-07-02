@@ -26,8 +26,57 @@ footer{
 }
 
 .header-contents{
-    display: inline-block;
-    width: 530px;
+    display:none;
+    margin-right:auto;
+    background-color: black;
+    color: white;
+    text-align:center;
+    left:0;
+    margin-left: auto;
+    width: 100px;
+}
+/*ナビゲーション関連の編集*/
+.nav{
+    display:none;
+    color: green;
+    cursor:pointer;
+    font-size: 20px;
+    margin-top: 4px;
+}
+#nav div{
+    display:none;
+}
+
+#nav{
+    right:2;
+    margin-right: 45px;
+    padding:2px;
+}
+
+#nav ul {
+    padding-top: 6px;
+    margin-top: 5px;
+    
+}
+#nav ul li {
+    font-size: 10px;
+    list-style-type:none;
+    display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .5s;
+}
+
+
+#nav li a:hover{
+  color: #ffffff;
+  background: #cd5c5c;
+  border-bottom: none;
+}
+.main-contents{
+    z-index: 5;
 }
 
 .header-contents a{
@@ -39,11 +88,19 @@ footer{
     
 }
 
+.slide-contents{
+    z-index: 1;
+}
+
     
     .footer-contents-top{
     display:flex;
     justify-content: center;
     background-color: #797;
+}
+.content{
+    color: white;
+    z-index: 2;
 }
 
 .footer-contents-top a{

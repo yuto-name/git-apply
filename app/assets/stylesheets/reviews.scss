@@ -8,6 +8,7 @@
 .contents{
     border:inset 7px #779;
     display: flex;
+    z-index: 2;
     
 .contents-name{
 
@@ -38,7 +39,6 @@ ul{
 
 .contents-menu{
     display: inline-block;
-    width: 100%;
     
     .left{
         margin: 5px;
