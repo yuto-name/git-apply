@@ -1,3 +1,4 @@
+/*site page 全体*/
 body{
     position: relative;
     background-color: #f5f5f5;
@@ -14,61 +15,9 @@ footer{
     left: 0;
     height:90px;
 }
+/*site page 全体のリンク終了*/
 
-
-.headers{
-    background-color: #699;
-    border-radius: 4px;
-    height: 45px;
-    line-height: 45px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-contents{
-    display:none;
-    margin-right:auto;
-    background-color: black;
-    color: white;
-    text-align:center;
-    left:0;
-    margin-left: auto;
-    width: 100px;
-}
 /*ナビゲーション関連の編集*/
-.nav{
-    display:none;
-    color: green;
-    cursor:pointer;
-    font-size: 20px;
-    margin-top: 4px;
-}
-#nav div{
-    display:none;
-}
-
-#nav{
-    right:2;
-    margin-right: 45px;
-    padding:2px;
-}
-
-#nav ul {
-    padding-top: 6px;
-    margin-top: 5px;
-    
-}
-#nav ul li {
-    font-size: 10px;
-    list-style-type:none;
-    display: block;
-  text-decoration: none;
-  color: #000000;
-  margin: 0 15px;
-  padding: 10px;
-  transition: .5s;
-}
-
 
 #nav li a:hover{
   color: #ffffff;
@@ -77,10 +26,6 @@ footer{
 }
 .main-contents{
     z-index: 5;
-}
-
-.header-contents a{
-    margin-left: 3px;
 }
 
 .header-name{
@@ -98,21 +43,10 @@ footer{
     justify-content: center;
     background-color: #797;
 }
-.content{
-    color: white;
-    z-index: 2;
-}
 
 .footer-contents-top a{
     margin-left: 20px;
 }
-
-
-
-a{
-    text-decoration: none;
-}
-
 .copyright{
     text-align: center;
     line-height: 70px;

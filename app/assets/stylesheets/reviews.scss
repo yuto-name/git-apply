@@ -1,10 +1,118 @@
 /*index.html.erb*/
-
 *{
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
 }
+.headers{
+    background-color: #699;
+    border-radius: 4px;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    
+    .headers-name{
+        
+        span{
+            text-decoration: none;
+        }
+    
+    }
+    
+    /*1のリンク終了*/
+    
+    /*検索エンジンコード*/
+    .search-form{
+        
+        label{
+            
+        }
+        
+        .search-form{
+            
+        }
+        
+        .search-btn{
+            
+        }
+    }
+    /*2のリンク終了*/
+    
+    /*ナビゲーション（動きあり）ボタン式のカーソル呼び出し*/
+    
+#menu{
+    right:2;
+    margin-right: 45px;
+    padding:2px;
+    width: 100px;
+    border:1px solid #999;
+    color:#999;
+    cursor:pointer;
+     color: green;
+    list-style:none;
+    text-decoration:none;
+    cursor:pointer;
+    font-size: 14px;
+    margin-top: 4px;
+    }
+    
+.header-contents{
+    transition: .5s;
+    z-index: 100;
+    background-color: black;
+    color: black;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    left: 0;
+    margin-right: 3px;
+    margin-left: auto;
+    width: 0;
+        
+    .open-menu{
+        width: 50%;
+    }
+ul{
+    padding: 50px 20px;
+    background-color: black;
+    list-style: none;
+    
+li{
+  font-size: 10px;
+  color: #000000;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .5s;
+  text-align: center;
+  
+  a{
+      margin-left: 3px;
+      margin: 2rem 0;
+      display: block;
+  }
+}
+    
+ }
+    }
+    .menu-background{
+        position: fixed;
+        top:0;
+        right:0;
+        display: block;
+        width:0;
+        height:0;
+        background: black;
+        opacity: 0.8;
+    }
+}
+    /*3のリンクの終了*/
+    
+    /*headerの下にあるコンテンツの開設*/
 
+    /*４のリンクが終了*/
+    
 .contents{
     border:inset 7px #779;
     display: flex;
@@ -35,6 +143,11 @@ ul{
 }
     }
     
+}
+
+
+
+    
 
 
 .contents-menu{
@@ -55,7 +168,7 @@ ul{
         padding: 4px;
     }
 }
-}
+
 
 
 .reviews-form{

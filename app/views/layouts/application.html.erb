@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<script src = "javascript/products.js"></script>
-<script type="text/javascript">
-
+<script src= "text/javascript"></script>
         $(document).ready(function(){
             $('.slide-contents').bxSlider({
                 auto: true,
@@ -27,7 +25,7 @@
     <header>
         <div class = "headers">
             <div class = "header-name">
-                <a href = "/" class = "header-button" ><span style = "font-weight: bold;">場所タグ～一人暮らしから衣替え迄すべて解決
+                <a href = "/" class = "header-button" ><span style = "font-weight: bold;">HOME
                 </span></a>
             </div>
             
@@ -37,11 +35,8 @@
             <%= f.submit "検索", class: "search-btn" %>
             <% end %>
 <!---ここから下はナビゲーション --->
-
-<button id = "nav">
-    <div>閉じる</div>
-    <p class = "nav">メニュー一覧</p>
-<div class = "header-contents">
+<button id = "menu">メニュー一覧</button>
+<nav id= "nav" class = "header-contents">
     <ul>
       <li><%= link_to '製品紹介', '/products',  class: "content" %></li>
       <li><%= link_to 'メニュー', '/reviews/new', class: "content" %></li>
@@ -54,8 +49,12 @@
       <li><%= link_to 'ログイン', new_user_session_path, class: "content" %></li>               
             <% end %>
     </ul>
-</div>
-</button>
+</nav>
+<div id = "back" class = "menu-background"></div>
+
+
+
+
 <!---ここまでがナビゲーション --->
 
 </div>
