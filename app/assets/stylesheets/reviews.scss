@@ -56,34 +56,33 @@
     cursor:pointer;
     font-size: 14px;
     margin-top: 4px;
+    
+    
     }
     
 .header-contents{
     transition: .5s;
     z-index: 100;
-    background-color: black;
-    color: black;
+    color: #57;
+    margin-top: 46px;
     position: fixed;
-    overflow: hidden;
-    text-align: center;
-    left: 0;
-    margin-right: 3px;
-    margin-left: auto;
-    width: 0;
+    text-align: right;
+    right: 0;
         
     .open-menu{
         width: 50%;
     }
 ul{
-    padding: 50px 20px;
-    background-color: black;
+    
+    text-align:right;
+    display:inline-block;
     list-style: none;
+    color:white;
     
 li{
-  font-size: 10px;
-  color: #000000;
+  display:none;
+  font-size: 20px;
   margin: 0 15px;
-  padding: 10px;
   transition: .5s;
   text-align: center;
   
@@ -91,20 +90,14 @@ li{
       margin-left: 3px;
       margin: 2rem 0;
       display: block;
+      
+      &:hover{
+          color: white;
+      }
   }
 }
     
  }
-    }
-    .menu-background{
-        position: fixed;
-        top:0;
-        right:0;
-        display: block;
-        width:0;
-        height:0;
-        background: black;
-        opacity: 0.8;
     }
 }
     /*3のリンクの終了*/
