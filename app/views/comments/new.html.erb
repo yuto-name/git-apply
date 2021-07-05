@@ -1,19 +1,14 @@
-<div class = "comments-room">
-<h2>当サイトへのご質問ありがとうございます</br>
-    このサイトへの不信や気づいたことがありましたらご記入ください</h2>
+<div class = "comments-border">
+    <div class = "comments-room">
+<h2>当サイトへの質問箱</h2>
     <div class = "comments-area">
-        <%= form_for @comment, :url => {:controller => :comments, :action => :create } do |f| %>
+    <%= form_for @comment, :url => {:controller => :comments, :action => :create } do |f| %>
         
         <div class = "form-commment">
-            <%= f.label :ここに書いてね %></br>
-            <%= f.text_area :question,  placeholder: '（例）このサイトはどのような目的で作られましたか？'%>
+            <%= f.text_area :question,  placeholder: '質問を入力'%>
         </div>
-        
-          <div class = "form-commment">
-            <%= f.label :質問を確認して（編集できません） %>
-            <%= f.submit '送信' %>
-        </div>
-        
-        <% end %>
+            <button><%= f.submit '質問を送信する' %></button>
+    <% end %>
     </div>
+</div>
 </div>
