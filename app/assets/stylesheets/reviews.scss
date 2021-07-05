@@ -1,13 +1,116 @@
 /*index.html.erb*/
-
 *{
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
 }
+.headers{
+    background-color: #699;
+    border-radius: 4px;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    
+    .headers-name{
+        
+        span{
+            text-decoration: none;
+        }
+    
+    }
+    
+    /*1のリンク終了*/
+    
+    /*検索エンジンコード*/
+    .search-form{
+        
+        label{
+            
+        }
+        
+        .search-form{
+            
+        }
+        
+        .search-btn{
+            
+        }
+    }
+    /*2のリンク終了*/
+    
+    /*ナビゲーション（動きあり）ボタン式のカーソル呼び出し*/
+    
+#menu{
+    right:2;
+    margin-right: 45px;
+    padding:2px;
+    width: 100px;
+    border:1px solid #999;
+    color:#999;
+    cursor:pointer;
+     color: green;
+    list-style:none;
+    text-decoration:none;
+    cursor:pointer;
+    font-size: 14px;
+    margin-top: 4px;
+    
+    
+    }
+    
+.header-contents{
+    transition: .5s;
+    z-index: 100;
+    color: #57;
+    margin-top: 46px;
+    position: fixed;
+    text-align: right;
+    right: 0;
+        
+    .open-menu{
+        width: 50%;
+    }
+ul{
+    
+    text-align:right;
+    display:inline-block;
+    list-style: none;
+    color:white;
+    
+li{
+  display:none;
+  font-size: 20px;
+  margin: 0 15px;
+  transition: .5s;
+  text-align: center;
+  
+  a{
+      margin-left: 3px;
+      margin: 2rem 0;
+      display: block;
+      
+      &:hover{
+          color: white;
+      }
+  }
+}
+    
+ }
+    }
+}
+    /*3のリンクの終了*/
+    
+    /*headerの下にあるコンテンツの開設*/
 
+    /*４のリンクが終了*/
+    
 .contents{
     border:inset 7px #779;
     display: flex;
+    z-index: 2;
+    
 .contents-name{
 
 ul{
@@ -33,11 +136,15 @@ ul{
 }
     }
     
+}
+
+
+
+    
 
 
 .contents-menu{
     display: inline-block;
-    width: 100%;
     
     .left{
         margin: 5px;
@@ -54,7 +161,7 @@ ul{
         padding: 4px;
     }
 }
-}
+
 
 
 .reviews-form{

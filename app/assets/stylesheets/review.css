@@ -1,3 +1,4 @@
+/*site page 全体*/
 body{
     position: relative;
     background-color: #f5f5f5;
@@ -14,29 +15,26 @@ footer{
     left: 0;
     height:90px;
 }
+/*site page 全体のリンク終了*/
 
+/*ナビゲーション関連の編集*/
 
-.headers{
-    background-color: #699;
-    border-radius: 4px;
-    height: 45px;
-    line-height: 45px;
-    display: flex;
-    justify-content: space-between;
+#nav li a:hover{
+  color: #ffffff;
+  background: #cd5c5c;
+  border-bottom: none;
 }
-
-.header-contents{
-    display: inline-block;
-    width: 530px;
-}
-
-.header-contents a{
-    margin-left: 3px;
+.main-contents{
+    z-index: 5;
 }
 
 .header-name{
     text-shadow: #FC0 1px 0 10px;
     
+}
+
+.slide-contents{
+    z-index: 1;
 }
 
     
@@ -49,13 +47,6 @@ footer{
 .footer-contents-top a{
     margin-left: 20px;
 }
-
-
-
-a{
-    text-decoration: none;
-}
-
 .copyright{
     text-align: center;
     line-height: 70px;
